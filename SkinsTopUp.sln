@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{622D0F49-DDCF-4C6F-AE11-693A07F55733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkinsTopUp.Web", "SkinsTopUp.Web\SkinsTopUp.Web.csproj", "{4DCD4DBA-4B37-4A0E-BA34-E51E063947E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkinsTopUp.TelegramBot", "SkinsTopUp.TelegramBot\SkinsTopUp.TelegramBot.csproj", "{BB7C4D07-8160-4E6A-A3A1-B37019265278}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{58DE01B8-4EBF-4AA3-BA92-B7E67C1885B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkinsTopUp.Infrastructure", "SkinsTopUp.Infrastructure\SkinsTopUp.Infrastructure.csproj", "{0BD6CB4D-4DDC-4513-A16A-32A3F9C531AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkinsTopUp.Core", "SkinsTopUp.Core\SkinsTopUp.Core.csproj", "{B2186D33-6A7B-4C64-9ACB-691D78BA9E2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DCD4DBA-4B37-4A0E-BA34-E51E063947E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DCD4DBA-4B37-4A0E-BA34-E51E063947E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DCD4DBA-4B37-4A0E-BA34-E51E063947E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DCD4DBA-4B37-4A0E-BA34-E51E063947E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB7C4D07-8160-4E6A-A3A1-B37019265278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB7C4D07-8160-4E6A-A3A1-B37019265278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB7C4D07-8160-4E6A-A3A1-B37019265278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB7C4D07-8160-4E6A-A3A1-B37019265278}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BD6CB4D-4DDC-4513-A16A-32A3F9C531AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BD6CB4D-4DDC-4513-A16A-32A3F9C531AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BD6CB4D-4DDC-4513-A16A-32A3F9C531AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BD6CB4D-4DDC-4513-A16A-32A3F9C531AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2186D33-6A7B-4C64-9ACB-691D78BA9E2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2186D33-6A7B-4C64-9ACB-691D78BA9E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2186D33-6A7B-4C64-9ACB-691D78BA9E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2186D33-6A7B-4C64-9ACB-691D78BA9E2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4DCD4DBA-4B37-4A0E-BA34-E51E063947E0} = {622D0F49-DDCF-4C6F-AE11-693A07F55733}
+		{BB7C4D07-8160-4E6A-A3A1-B37019265278} = {622D0F49-DDCF-4C6F-AE11-693A07F55733}
+		{0BD6CB4D-4DDC-4513-A16A-32A3F9C531AE} = {622D0F49-DDCF-4C6F-AE11-693A07F55733}
+		{B2186D33-6A7B-4C64-9ACB-691D78BA9E2A} = {622D0F49-DDCF-4C6F-AE11-693A07F55733}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AE13913-EA94-41A2-ABA0-E2D08B96EE43}
+	EndGlobalSection
+EndGlobal
