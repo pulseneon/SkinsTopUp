@@ -1,6 +1,6 @@
 ﻿namespace SkinsTopUp.Core
 {
-    internal class Program
+    internal class DefaultCoreModule
     {
         static void Main(string[] args)
         {

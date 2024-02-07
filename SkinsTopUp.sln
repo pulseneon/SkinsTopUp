@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{622D0F49-DDCF-4C6F-AE11-693A07F55733}"
+	ProjectSection(SolutionItems) = preProject
+		appsettings.json = appsettings.json
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkinsTopUp.Web", "SkinsTopUp.Web\SkinsTopUp.Web.csproj", "{4DCD4DBA-4B37-4A0E-BA34-E51E063947E0}"
 EndProject
@@ -12,6 +15,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{58DE01B8-4EBF-4AA3-BA92-B7E67C1885B6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkinsTopUp.Infrastructure", "SkinsTopUp.Infrastructure\SkinsTopUp.Infrastructure.csproj", "{0BD6CB4D-4DDC-4513-A16A-32A3F9C531AE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B2186D33-6A7B-4C64-9ACB-691D78BA9E2A} = {B2186D33-6A7B-4C64-9ACB-691D78BA9E2A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkinsTopUp.Core", "SkinsTopUp.Core\SkinsTopUp.Core.csproj", "{B2186D33-6A7B-4C64-9ACB-691D78BA9E2A}"
 EndProject
