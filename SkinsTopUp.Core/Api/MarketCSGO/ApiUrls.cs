@@ -10,7 +10,7 @@ namespace SkinsTopUp.Core.ExternalAPI.MarketCSGO
         private const string Host = "https://market.csgo.com/api/v2";
         private static readonly Uri BaseUri = new(Host);
 
-        public static Uri Prices(CurrencyConstants currency)
+        public static Uri Prices(Currency currency)
         {
             string pricesPath = "/api/v2/prices/";
             return new Uri(BaseUri, $"{pricesPath}{currency}.json");
