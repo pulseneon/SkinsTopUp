@@ -8,7 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{622D0F49-DDC
 		appsettings.json = appsettings.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkinsTopUp.Web", "SkinsTopUp.Web\SkinsTopUp.Web.csproj", "{4DCD4DBA-4B37-4A0E-BA34-E51E063947E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkinsTopUp.TelegramWebApp", "SkinsTopUp.Web\SkinsTopUp.TelegramWebApp.csproj", "{4DCD4DBA-4B37-4A0E-BA34-E51E063947E0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkinsTopUp.TelegramBot", "SkinsTopUp.TelegramBot\SkinsTopUp.TelegramBot.csproj", "{BB7C4D07-8160-4E6A-A3A1-B37019265278}"
 EndProject
@@ -20,7 +20,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkinsTopUp.Core", "SkinsTop
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ManualTesting", "ManualTesting", "{D8E41860-88FE-4E8A-B733-835E1ADAC44D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMarket", "TestMarket\TestMarket.csproj", "{3C865155-9DE8-4754-93B9-791924955BF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestMarket", "TestMarket\TestMarket.csproj", "{3C865155-9DE8-4754-93B9-791924955BF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
