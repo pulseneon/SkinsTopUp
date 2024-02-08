@@ -8,7 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{622D0F49-DDC
 		appsettings.json = appsettings.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkinsTopUp.TelegramWebApp", "SkinsTopUp.TelegramWebApp\SkinsTopUp.TelegramWebApp.csproj", "{4DCD4DBA-4B37-4A0E-BA34-E51E063947E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkinsTopUp.TelegramWebApp", "SkinsTopUp.Web\SkinsTopUp.TelegramWebApp.csproj", "{4DCD4DBA-4B37-4A0E-BA34-E51E063947E0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkinsTopUp.TelegramBot", "SkinsTopUp.TelegramBot\SkinsTopUp.TelegramBot.csproj", "{BB7C4D07-8160-4E6A-A3A1-B37019265278}"
 EndProject
