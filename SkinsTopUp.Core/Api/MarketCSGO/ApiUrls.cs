@@ -24,14 +24,21 @@ namespace SkinsTopUp.Core.ExternalAPI.MarketCSGO
 
         public static Uri BuyFor()
         {
-            string balancePath = "/buy-for";
-            return new Uri(BaseUri, balancePath);
+            string buyPath = "/buy-for";
+            return new Uri(BaseUri, buyPath);
+        }
+
+        public static Uri GetListBuyInfoByCustomId()
+        {
+            string listPath = "/get-list-buy-info-by-custom-id";
+            return new Uri(BaseUri, listPath);
         }
 
         public static Uri GetBuyInfoByCustomId()
         {
-            string balancePath = "/get-buy-info-by-custom-id";
-            return new Uri(BaseUri, balancePath);
+            string infoPath = "/get-buy-info-by-custom-id";
+            return new Uri(BaseUri, infoPath);
         }
+
     }
 }

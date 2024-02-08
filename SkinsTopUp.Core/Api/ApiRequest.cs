@@ -32,5 +32,10 @@ namespace SkinsTopUp.Core.Api
                 return null;
             }
         }
+
+        public async Task<T> PostRequst<T>(Uri url) where T : class
+        {
+            throw new NotImplementedException();
+        }
     }
 }

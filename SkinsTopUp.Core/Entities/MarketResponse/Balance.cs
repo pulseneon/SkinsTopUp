@@ -1,9 +1,16 @@
-﻿namespace SkinsTopUp.Core.Entities.MarketResponse
+﻿using Newtonsoft.Json;
+
+namespace SkinsTopUp.Core.Entities.MarketResponse
 {
-    internal class Balance
+    class Balance
     {
+        [JsonProperty("money")]
         public double Money { get; set; }
+
+        [JsonProperty("currency")]
         public string Currency { get; set; }
+
+        [JsonProperty("success")]
         public bool Success { get; set; }
     }
 }
