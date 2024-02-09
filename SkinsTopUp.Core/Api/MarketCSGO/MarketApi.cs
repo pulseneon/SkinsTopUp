@@ -2,6 +2,7 @@
 using SkinsTopUp.Core.Constants;
 using SkinsTopUp.Core.Entities.MarketResponse;
 using SkinsTopUp.Core.ExternalAPI.MarketCSGO;
+using System.Diagnostics;
 using System.Web;
 
 namespace SkinsTopUp.Core.ExternalApi.MarketCSGO
@@ -19,8 +20,46 @@ namespace SkinsTopUp.Core.ExternalApi.MarketCSGO
 
         public async Task<Prices> GetPricesAsync(Currency currency) => await base.GetRequest<Prices>(ApiUrls.Prices(currency));
 
-        public Task BuyForAsync() => throw new NotImplementedException();
-        public Task Buy() => throw new NotImplementedException();
+        public async Task<BuyResult> Buy(string hashName, double price, string? customId)
+        {
+            var queryParams = HttpUtility.ParseQueryString(string.Empty);
+            queryParams["key"] = _token;
+            queryParams["hash_name"] = hashName;
+            queryParams["price"] = price.ToString();
+            
+            if (customId != null)
+            {
+                queryParams["custom_id"] = customId;
+            }
+
+            var baseUrl = ApiUrls.Buy();
+            var query = queryParams.ToString();
+            var url = new Uri(baseUrl + query);
+
+            return await base.PostRequest<BuyResult>(url);
+        }
+
+        public async Task<BuyResult> BuyForAsync(string hashName, double price, string? customId, string tradeUrl)
+        {
+            var queryParams = HttpUtility.ParseQueryString(string.Empty);
+            queryParams["key"] = _token;
+            queryParams["hash_name"] = hashName;
+            queryParams["price"] = price.ToString();
+
+            if (customId != null)
+            {
+                queryParams["custom_id"] = customId;
+            }
+
+            tradeUrl = tradeUrl.Replace("https://steamcommunity.com/tradeoffer/new/?", string.Empty);
+
+            var baseUrl = ApiUrls.Buy();
+            var query = queryParams.ToString();
+            var url = new Uri(baseUrl + query + tradeUrl);
+
+            return await base.PostRequest<BuyResult>(url);
+        }
+
         public async Task<BuyList> GetBuyListInfoAsync(string[] customIds)
         {
             var queryParams = HttpUtility.ParseQueryString(string.Empty);

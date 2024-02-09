@@ -10,6 +10,12 @@ namespace SkinsTopUp.Core.ExternalAPI.MarketCSGO
         private const string Host = "https://market.csgo.com/api/v2";
         private static readonly Uri BaseUri = new(Host);
 
+        public static Uri Prices()
+        {
+            string pricesPath = "/api/v2/prices/";
+            return new Uri(BaseUri, $"{pricesPath}{Currency.RUB}.json");
+        }
+
         public static Uri Prices(Currency currency)
         {
             string pricesPath = "/api/v2/prices/";
@@ -20,6 +26,12 @@ namespace SkinsTopUp.Core.ExternalAPI.MarketCSGO
         {
             string balancePath = "/get-money";
             return new Uri(BaseUri, balancePath);
+        }
+
+        public static Uri Buy()
+        {
+            string buyPath = "/buy";
+            return new Uri(BaseUri, buyPath);
         }
 
         public static Uri BuyFor()
