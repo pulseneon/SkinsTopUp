@@ -6,7 +6,7 @@ namespace SkinsTopUp.Core.Api.Steam
     {
         public static Uri Price(string nameHash, Currency currency)
         {
-            string itemPath = $"https://steamcommunity.com/market/priceoverview/?&currency={currency}&appid={SteamApp.CSGO}&market_hash_name={nameHash}";
+            string itemPath = $"https://steamcommunity.com/market/priceoverview/?&currency={(int)currency}&appid={(int)SteamApp.CSGO}&market_hash_name={nameHash}";
             return new Uri(itemPath);
         }
     }
