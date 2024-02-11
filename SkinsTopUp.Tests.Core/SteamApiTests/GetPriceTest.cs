@@ -21,7 +21,7 @@ namespace SkinsTopUp.Core.Tests.SteamApiTests
 
         [Theory]
         [Repeat(10)]
-        public async Task ValidSkinsGetPriceAsync(int iterationNumber)
+        public async Task ValidSkinsGetPriceTestAsync(int iterationNumber)
         {
             var hashName = _validHashNames[_random.Next(_validHashNames.Count)];
             var currency = EnumExtensions.GetRandomEnumValue<Currency>();
@@ -33,7 +33,7 @@ namespace SkinsTopUp.Core.Tests.SteamApiTests
         }
 
         [Fact]
-        public async Task ValidSkinsGetPriceWithoutPriceAsync()
+        public async Task ValidSkinsGetPriceWithoutPriceTestAsync()
         {
             var hashName = _validHashNames[_random.Next(_validHashNames.Count)];
 
@@ -42,5 +42,7 @@ namespace SkinsTopUp.Core.Tests.SteamApiTests
 
             Assert.True(result.Success);
         }
+
+        // TODO: Реализовать InvalidSkinsGetPriceTestAsync
     }
 }
