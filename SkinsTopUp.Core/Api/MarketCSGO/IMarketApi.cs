@@ -1,7 +1,7 @@
 ﻿using SkinsTopUp.Core.Entities.MarketResponse;
 using SkinsTopUp.Core.Enums;
 
-namespace SkinsTopUp.Core.ExternalApi.MarketCSGO
+namespace SkinsTopUp.Core.Api.MarketCSGO
 {
     internal interface IMarketApi
     {

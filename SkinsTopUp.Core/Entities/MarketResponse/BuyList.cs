@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace SkinsTopUp.Core.Entities.MarketResponse
 {
-
     public class BuyList
     {
         [JsonProperty("success")]

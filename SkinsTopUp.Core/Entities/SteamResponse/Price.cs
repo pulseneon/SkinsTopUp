@@ -2,7 +2,7 @@
 
 namespace SkinsTopUp.Core.Entities.SteamResponse
 {
-    class Price
+    public class Price
     {
         [JsonProperty("success")]
         public bool Success { get; set; }

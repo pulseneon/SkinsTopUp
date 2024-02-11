@@ -2,7 +2,7 @@
 
 namespace SkinsTopUp.Core.Entities.MarketResponse
 {
-    class Prices
+    public class Prices
     {
         [JsonProperty("success")]
         public bool Success { get; set; }

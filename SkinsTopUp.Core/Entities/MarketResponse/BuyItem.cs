@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SkinsTopUp.Core.Entities.MarketResponse
 {
-    class BuyItem
+    public class BuyItem
     {
         [JsonProperty("success")]
         public bool Success { get; set; }

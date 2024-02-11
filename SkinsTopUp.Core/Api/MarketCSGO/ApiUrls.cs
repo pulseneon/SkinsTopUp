@@ -1,12 +1,11 @@
-﻿using SkinsTopUp.Core.Constants;
-using SkinsTopUp.Core.Enums;
+﻿using SkinsTopUp.Core.Enums;
 
-namespace SkinsTopUp.Core.ExternalAPI.MarketCSGO
+namespace SkinsTopUp.Core.Api.MarketCSGO
 {
     /// <summary>
     /// Class for retrieving MarketCSGO API URLs
     /// </summary>
-    public static class ApiUrls
+    internal static class ApiUrls
     {
         private const string Host = "https://market.csgo.com/api/v2";
         private static readonly Uri BaseUri = new(Host);

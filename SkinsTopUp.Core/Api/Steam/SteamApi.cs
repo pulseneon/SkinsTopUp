@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace SkinsTopUp.Core.Api.Steam
 {
-    internal class SteamApi : ApiRequest, ISteamApi
+    public class SteamApi : ApiRequest, ISteamApi
     {
         public async Task<Price> GetPrice(string hashName, Currency currency = Currency.RUB) => await base.GetRequest<Price>(ApiUrls.Price(hashName, currency));
 

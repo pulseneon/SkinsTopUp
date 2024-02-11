@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SkinsTopUp.Core.Api
 {
-    internal class ApiRequest
+    public class ApiRequest
     {
         public async Task<T> GetRequest<T>(Uri url) where T : class
         {

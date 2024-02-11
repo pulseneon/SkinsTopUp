@@ -2,7 +2,7 @@
 
 namespace SkinsTopUp.Core.Entities.MarketResponse
 {
-    class Balance
+    public class Balance
     {
         [JsonProperty("money")]
         public double Money { get; set; }

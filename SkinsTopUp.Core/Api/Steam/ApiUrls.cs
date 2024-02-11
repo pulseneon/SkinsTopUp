@@ -2,7 +2,7 @@
 
 namespace SkinsTopUp.Core.Api.Steam
 {
-    internal class ApiUrls
+    internal static class ApiUrls
     {
         public static Uri Price(string nameHash, Currency currency)
         {

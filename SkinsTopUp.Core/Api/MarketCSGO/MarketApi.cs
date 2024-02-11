@@ -1,12 +1,10 @@
-﻿using SkinsTopUp.Core.Api;
-using SkinsTopUp.Core.Entities.MarketResponse;
+﻿using SkinsTopUp.Core.Entities.MarketResponse;
 using SkinsTopUp.Core.Enums;
-using SkinsTopUp.Core.ExternalAPI.MarketCSGO;
 using System.Web;
 
-namespace SkinsTopUp.Core.ExternalApi.MarketCSGO
+namespace SkinsTopUp.Core.Api.MarketCSGO
 {
-    internal class MarketApi: ApiRequest, IMarketApi
+    public class MarketApi: ApiRequest, IMarketApi
     {
         private readonly string _token;
 
