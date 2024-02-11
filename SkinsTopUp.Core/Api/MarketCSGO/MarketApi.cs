@@ -1,8 +1,7 @@
 ﻿using SkinsTopUp.Core.Api;
-using SkinsTopUp.Core.Constants;
 using SkinsTopUp.Core.Entities.MarketResponse;
+using SkinsTopUp.Core.Enums;
 using SkinsTopUp.Core.ExternalAPI.MarketCSGO;
-using System.Diagnostics;
 using System.Web;
 
 namespace SkinsTopUp.Core.ExternalApi.MarketCSGO
@@ -18,7 +17,7 @@ namespace SkinsTopUp.Core.ExternalApi.MarketCSGO
 
         public async Task<Balance> GetBalanceAsync() => await base.GetRequest<Balance>(ApiUrls.Balance());
 
-        public async Task<Prices> GetPricesAsync(Currency currency) => await base.GetRequest<Prices>(ApiUrls.Prices(currency));
+        public async Task<Prices> GetPricesAsync(Currency currency = Currency.RUB) => await base.GetRequest<Prices>(ApiUrls.Prices(currency));
 
         public async Task<BuyResult> Buy(string hashName, double price, string? customId)
         {

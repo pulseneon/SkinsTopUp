@@ -1,4 +1,5 @@
 ﻿using SkinsTopUp.Core.Constants;
+using SkinsTopUp.Core.Enums;
 
 namespace SkinsTopUp.Core.ExternalAPI.MarketCSGO
 {
@@ -10,16 +11,10 @@ namespace SkinsTopUp.Core.ExternalAPI.MarketCSGO
         private const string Host = "https://market.csgo.com/api/v2";
         private static readonly Uri BaseUri = new(Host);
 
-        public static Uri Prices()
-        {
-            string pricesPath = "/api/v2/prices/";
-            return new Uri(BaseUri, $"{pricesPath}{Currency.RUB}.json");
-        }
-
         public static Uri Prices(Currency currency)
         {
             string pricesPath = "/api/v2/prices/";
-            return new Uri(BaseUri, $"{pricesPath}{currency}.json");
+            return new Uri(BaseUri, $"{pricesPath}{nameof(currency).ToLower()}.json");
         }
 
         public static Uri Balance()
